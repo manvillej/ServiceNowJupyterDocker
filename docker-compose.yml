@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./
+    command: jupyter-lab
+    volumes:
+      - ./src:/home/jovyan/work
+    ports:
+      - 8888:8888
+    environment:
+      - SERVICENOW_INSTANCE=${SERVICENOW_INSTANCE}
+      - SERVICENOW_USERNAME=${SERVICENOW_USERNAME}
+      - SERVICENOW_PASSWORD=${SERVICENOW_PASSWORD}
+      - JUPYTER_TOKEN=${JUPYTER_TOKEN}
