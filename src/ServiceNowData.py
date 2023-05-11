@@ -31,6 +31,7 @@ class ServiceNowHTTPXClient(object):
 
     def healthCheck(self):
         response = self.getData('incident', 'ORDERBYDESCopened_at', {'sysparm_limit':1})
+        return response
 
     def close(self):
         self.client.close()
