@@ -1,6 +1,8 @@
 # ServiceNowJupyterDocker
  A containerized JupyterLab application for analyzing ServiceNow data 
 
+https://medium.com/@jeffmanville/setting-up-a-data-science-environment-for-servicenow-with-jupyterlab-docker-ebad55b694b8
+
 ## Some Useful Commands
     docker-compose up -d --build
     docker-compose down -v
