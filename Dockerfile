@@ -1,9 +1,5 @@
 # pull official base image
-FROM jupyter/datascience-notebook
-
-# I need to pin this image
-# FROM jupyter/datascience-notebook:f3079808ca8c
-
+FROM jupyter/datascience-notebook:4d70cf8da953
 
 # set working directory
 WORKDIR /home/jovyan/work
